@@ -16,15 +16,6 @@ export default {
         body: ['"DM Sans"', 'sans-serif'],
         display: ['"Bricolage Grotesque"', 'sans-serif'],
       },
-      keyframes: {
-        marquee: {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-50%)' },
-        },
-      },
-      animation: {
-        marquee: 'marquee 45s linear infinite',
-      },
     },
   },
   plugins: [],

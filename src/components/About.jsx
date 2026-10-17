@@ -31,7 +31,7 @@ const About = () => {
           offset={-72}
           className="mt-8 inline-flex cursor-pointer items-center gap-2 font-semibold text-ink border-b-2 border-accent pb-1 hover:text-accentDark transition-colors"
         >
-          Let&apos;s talk about your pipeline <FiArrowRight />
+          Let&apos;s talk about your workload <FiArrowRight />
         </Link>
       </motion.div>
     </section>

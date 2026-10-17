@@ -41,23 +41,27 @@ const Contact = () => {
     setStatus('sending')
     setStatusMessage('')
 
-    emailjs
-      .sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current, {
-        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-      })
-      .then(
-        () => {
-          setName('')
-          setEmail('')
-          setMessage('')
-          setStatus('success')
-          setStatusMessage('Message sent successfully.')
-        },
-        () => {
-          setStatus('error')
-          setStatusMessage('Message failed to send. Please try again.')
-        },
-      )
+    const { serviceId, templateId, publicKey } = profile.emailjs
+    if (!serviceId || !templateId || !publicKey) {
+      setStatus('error')
+      setStatusMessage(`The contact form isn't set up yet. Please email ${profile.contact.email} directly.`)
+      return
+    }
+
+    // The form field names (name, email, message) must match the {{variables}} in the EmailJS template.
+    emailjs.sendForm(serviceId, templateId, form.current, { publicKey }).then(
+      () => {
+        setName('')
+        setEmail('')
+        setMessage('')
+        setStatus('success')
+        setStatusMessage('Message sent successfully.')
+      },
+      () => {
+        setStatus('error')
+        setStatusMessage('Message failed to send. Please try again or email me directly.')
+      },
+    )
   }
 
   const { email: contactEmail, phone, whatsapp, location } = profile.contact
@@ -70,12 +74,12 @@ const Contact = () => {
 
   return (
     <section id="contact" className="max-w-[1200px] mx-auto px-4 sm:px-6 py-24">
-      <SectionLabel index="05" text="Contact" />
+      <SectionLabel index="06" text="Contact" />
 
       <div className="mt-8 grid lg:grid-cols-[1fr_1.2fr] overflow-hidden rounded-[28px] shadow-xl">
         <div className="bg-navy text-cream p-8 sm:p-12">
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold leading-[1.05]">
-            Let&apos;s fill your <span className="text-accent">calendar.</span>
+            Let&apos;s lighten your <span className="text-accent">workload.</span>
           </h2>
           <p className="mt-4 text-cream/70 leading-relaxed">{profile.contactIntro}</p>
 

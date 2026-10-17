@@ -7,6 +7,7 @@ const links = [
   { name: 'About', section: 'about' },
   { name: 'Skills', section: 'skills' },
   { name: 'Experience', section: 'experience' },
+  { name: 'Samples', section: 'samples' },
   { name: 'Credentials', section: 'credentials' },
   { name: 'Contact', section: 'contact' },
 ]
@@ -20,9 +21,7 @@ const Navbar = () => {
     <nav className="fixed top-0 inset-x-0 z-30 bg-ink/85 backdrop-blur-md border-b border-white/10">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 h-[72px] flex items-center justify-between">
         <Link to="home" {...scrollProps} className="flex items-center gap-3 cursor-pointer">
-          <span className="h-9 w-9 rounded-lg bg-accent text-ink font-display font-extrabold grid place-items-center">
-            {profile.initials}
-          </span>
+          <img src={profile.logo} alt={`${profile.name} logo`} className="h-10 w-10 rounded-lg object-cover ring-1 ring-white/15" />
           <span className="hidden sm:block font-display font-bold text-lg text-cream">{profile.name}</span>
         </Link>
 

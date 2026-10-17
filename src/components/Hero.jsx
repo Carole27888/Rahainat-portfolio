@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
-import { FiArrowRight, FiPhoneCall } from 'react-icons/fi'
+import { FiArrowRight, FiBriefcase } from 'react-icons/fi'
 import profile from '../data/profile'
 import { fadeIn } from '../framerMotion/variants'
 
 const Hero = () => {
   const [firstName, ...rest] = profile.name.split(' ')
-  const callStat = profile.stats[0]
+  const badgeStat = profile.stats[0]
 
   return (
     <section id="home" className="relative overflow-hidden bg-ink text-cream">
@@ -67,13 +67,13 @@ const Hero = () => {
             alt={profile.name}
             className="relative aspect-[4/5] w-full rounded-[28px] object-cover bg-navy"
           />
-          <div className="absolute left-3 sm:-left-8 bottom-8 flex items-center gap-3 rounded-2xl bg-cream px-4 py-3 text-ink shadow-2xl">
+          <div className="absolute left-3 sm:-left-8 -bottom-12 flex items-center gap-3 rounded-2xl bg-cream px-4 py-3 text-ink shadow-2xl">
             <span className="grid h-10 w-10 place-items-center rounded-full bg-accent text-ink">
-              <FiPhoneCall />
+              <FiBriefcase />
             </span>
             <div>
-              <p className="font-display text-2xl font-extrabold leading-none">{callStat.value}</p>
-              <p className="text-xs text-ink/60">{callStat.label}</p>
+              <p className="font-display text-2xl font-extrabold leading-none">{badgeStat.value}</p>
+              <p className="text-xs text-ink/60">{badgeStat.label}</p>
             </div>
           </div>
         </motion.div>
