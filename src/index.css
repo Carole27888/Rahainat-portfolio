@@ -1,28 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --ink: #1f2937;
-  --muted: #6b7280;
-  --surface: #fffdf8;
-  --mint: #1f7a6c;
-  --mint-soft: #d9f3ee;
-  --sunset: #e76f51;
-}
-
-html,
-body,
-#root {
-  min-height: 100%;
-}
-
 body {
   margin: 0;
-  color: var(--ink);
-  background:
-    radial-gradient(circle at 10% 10%, rgba(231, 111, 81, 0.12), transparent 35%),
-    radial-gradient(circle at 90% 5%, rgba(31, 122, 108, 0.15), transparent 30%),
-    linear-gradient(180deg, #fffdf8 0%, #f6faf8 45%, #f9f7ff 100%);
+  color: #0b1526;
+  background: #f8f4ec;
+}
+
+/* Faint grid behind the hero */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, #f8f4ec 1px, transparent 1px),
+    linear-gradient(to bottom, #f8f4ec 1px, transparent 1px);
+  background-size: 56px 56px;
 }

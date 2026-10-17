@@ -34,7 +34,18 @@ const profile = {
   // TODO: add Rahainat's photo to public/images and update this path
   photo: '/images/rahainat-placeholder.svg',
 
+  availability: 'Remote · Supporting US & UK teams',
+
+  stats: [
+    { value: '70+', label: 'Outbound calls per day' },
+    { value: '300+', label: 'Researched leads per week' },
+    { value: '4', label: 'Remote roles since 2025' },
+    { value: 'US & UK', label: 'Teams supported' },
+  ],
+
   highlights: ['Lead Generation & Prospecting', 'Cold Calling & Appointment Setting', 'CRM & GoHighLevel Automation'],
+
+  aboutHeadline: 'Turning cold lists into booked calls.',
 
   about:
     'Rahainat Kazeem is a remote sales, lead generation, and virtual support professional with experience supporting US and UK teams through outbound prospecting, appointment setting, CRM management, customer communication, and workflow automation. She is skilled in GoHighLevel, HubSpot, ClickUp, Slack, JustCall, Apollo, LinkedIn Sales Navigator, and Google Workspace, and is experienced in managing follow-ups, maintaining accurate records, coordinating tasks, and guiding prospective customers from first inquiry to registration.',
@@ -81,13 +92,6 @@ const profile = {
 
   experienceIntro:
     'Remote roles with US and UK teams across B2B lead generation, cold calling, appointment setting, CRM management, and program support.',
-  experienceStat: {
-    label: 'Since 2025',
-    value: '4',
-    caption: 'Remote roles supporting sales and operations teams in the US and UK.',
-  },
-  experienceSummary:
-    'Rahainat makes around 70 outbound calls a day, generates 300+ researched leads weekly, and books qualified meetings with company executives. She keeps pipelines organized in HubSpot and GoHighLevel and builds automated workflows so no follow-up slips through.',
 
   experiences: [
     {

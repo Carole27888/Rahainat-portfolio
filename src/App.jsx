@@ -1,31 +1,25 @@
-import NavbarMain from './components/Navbar/NavbarMain'
-import HeroMain from './components/HeroSection/HeroMain'
-import HeroGradient from './components/HeroSection/HeroGradient'
-import SubHeroSection from './components/HeroSection/SubHeroSection'
-import AboutMeMain from './components/AboutMeSection/AboutMeMain'
-import HelperSection from './components/HelperSection'
-import SkillsMain from './components/SkillsSection/SkillsMain'
-import SubSkills from './components/SkillsSection/SubSkills'
-import ExperienceMain from './components/ExperienceSection/ExperienceMain'
-import CredentialsMain from './components/CredentialsSection/CredentialsMain'
-import ContactMeMain from './components/ContactMeSection/ContactMeMain'
-import FooterMain from './components/FooterSection/FooterMain'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import ToolsMarquee from './components/ToolsMarquee'
+import About from './components/About'
+import Skills from './components/Skills'
+import Experience from './components/Experience'
+import Credentials from './components/Credentials'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <main className="font-body overflow-x-hidden">
-      <NavbarMain />
-      <HeroMain />
-      <HeroGradient />
-      <SubHeroSection />
-      <AboutMeMain />
-      <HelperSection />
-      <SkillsMain />
-      <SubSkills />
-      <ExperienceMain />
-      <CredentialsMain />
-      <ContactMeMain />
-      <FooterMain />
+      <Navbar />
+      <Hero />
+      <ToolsMarquee />
+      <About />
+      <Skills />
+      <Experience />
+      <Credentials />
+      <Contact />
+      <Footer />
     </main>
   )
 }
