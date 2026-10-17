@@ -16,8 +16,8 @@ const ContactForm = () => {
     setStatusMessage('')
 
     emailjs
-      .sendForm('service_k9jv2py', 'template_mm7jxva', form.current, {
-        publicKey: '1cGHRylC2dtLaN7Kh',
+      .sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current, {
+        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       })
       .then(
         () => {

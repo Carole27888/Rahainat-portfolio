@@ -1,10 +1,11 @@
+import profile from '../../data/profile'
 const AboutMeImage = () => {
   return (
     <div className="relative w-full max-w-[320px] h-[390px] sm:h-[450px] md:h-[500px] mx-auto">
       <div className="absolute inset-0 rounded-[2.5rem] overflow-hidden border-8 border-white shadow-xl">
         <img
-          src="/images/Abbie1.jpeg"
-          alt="Abigael at work"
+          src={profile.photo}
+          alt={profile.name}
           className="h-full w-full object-cover"
         />
       </div>

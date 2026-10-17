@@ -4,7 +4,7 @@ const links = [
   { link: 'About', section: 'about' },
   { link: 'Skills', section: 'skills' },
   { link: 'Experience', section: 'experience' },
-  { link: 'Projects', section: 'projects' },
+  { link: 'Credentials', section: 'credentials' },
   { link: 'Contact', section: 'contact' },
 ]
 

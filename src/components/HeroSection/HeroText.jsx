@@ -1,3 +1,4 @@
+import profile from '../../data/profile'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../framerMotion/variants'
 import { Link } from 'react-scroll'
@@ -12,7 +13,7 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="text-sm md:text-base uppercase tracking-[0.2em] text-emerald-700 font-semibold"
       >
-        Virtual Assistant / SMM
+        {profile.role}
       </motion.p>
 
       <motion.h1
@@ -22,7 +23,7 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="text-4xl md:text-6xl text-slate-800 font-special leading-tight"
       >
-        Abigael Ngotho
+        {profile.name}
       </motion.h1>
 
       <motion.p
@@ -32,7 +33,7 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="text-base md:text-lg text-slate-600 max-w-xl"
       >
-        Organized, proactive, and detail-driven Virtual Assistant / SMM helping teams stay focused, clients stay informed, and social channels stay active.
+        {profile.heroText}
       </motion.p>
 
       <motion.div
@@ -50,17 +51,17 @@ const HeroText = () => {
           offset={-110}
           className="inline-block px-6 py-3 rounded-xl bg-emerald-700 text-white font-semibold hover:bg-emerald-800 transition duration-300 cursor-pointer"
         >
-          Book a Consultation
+          Book a Call
         </Link>
         <Link
-          to="projects"
+          to="experience"
           spy={true}
           smooth={true}
           duration={500}
           offset={-110}
           className="inline-block px-6 py-3 rounded-xl border border-emerald-700 text-emerald-800 font-semibold hover:bg-emerald-50 transition duration-300 cursor-pointer"
         >
-          View Portfolio
+          View Experience
         </Link>
       </motion.div>
     </div>

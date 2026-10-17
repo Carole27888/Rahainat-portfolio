@@ -7,7 +7,7 @@ import HelperSection from './components/HelperSection'
 import SkillsMain from './components/SkillsSection/SkillsMain'
 import SubSkills from './components/SkillsSection/SubSkills'
 import ExperienceMain from './components/ExperienceSection/ExperienceMain'
-import ProjectsMain from './components/ProjectsSection/ProjectsMain'
+import CredentialsMain from './components/CredentialsSection/CredentialsMain'
 import ContactMeMain from './components/ContactMeSection/ContactMeMain'
 import FooterMain from './components/FooterSection/FooterMain'
 
@@ -23,7 +23,7 @@ function App() {
       <SkillsMain />
       <SubSkills />
       <ExperienceMain />
-      <ProjectsMain />
+      <CredentialsMain />
       <ContactMeMain />
       <FooterMain />
     </main>
