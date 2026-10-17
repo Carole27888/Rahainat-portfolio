@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #1f2937;
+  --muted: #6b7280;
+  --surface: #fffdf8;
+  --mint: #1f7a6c;
+  --mint-soft: #d9f3ee;
+  --sunset: #e76f51;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(231, 111, 81, 0.12), transparent 35%),
+    radial-gradient(circle at 90% 5%, rgba(31, 122, 108, 0.15), transparent 30%),
+    linear-gradient(180deg, #fffdf8 0%, #f6faf8 45%, #f9f7ff 100%);
+}
