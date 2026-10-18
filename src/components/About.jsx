@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
-import { FiArrowRight, FiCheck, FiFileText } from 'react-icons/fi'
+import { FiArrowRight, FiCheck } from 'react-icons/fi'
 import profile from '../data/profile'
 import { fadeIn } from '../framerMotion/variants'
 import SectionLabel from './SectionLabel'
@@ -23,26 +23,16 @@ const About = () => {
             </li>
           ))}
         </ul>
-        <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4">
-          <a
-            href={profile.cv}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 font-semibold text-ink hover:bg-ink hover:text-cream transition-colors"
-          >
-            View My CV <FiFileText />
-          </a>
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-72}
-            className="inline-flex cursor-pointer items-center gap-2 font-semibold text-ink border-b-2 border-accent pb-1 hover:text-accentDark transition-colors"
-          >
-            Let&apos;s talk about your workload <FiArrowRight />
-          </Link>
-        </div>
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-72}
+          className="mt-8 inline-flex cursor-pointer items-center gap-2 font-semibold text-ink border-b-2 border-accent pb-1 hover:text-accentDark transition-colors"
+        >
+          Let&apos;s talk about your workload <FiArrowRight />
+        </Link>
       </motion.div>
     </section>
   )

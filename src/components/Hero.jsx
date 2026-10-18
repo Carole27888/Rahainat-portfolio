@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
-import { FiArrowRight, FiBriefcase } from 'react-icons/fi'
+import { FiArrowRight, FiBriefcase, FiFileText } from 'react-icons/fi'
 import profile from '../data/profile'
 import { fadeIn } from '../framerMotion/variants'
 
@@ -42,16 +42,14 @@ const Hero = () => {
             >
               Book a Call <FiArrowRight />
             </Link>
-            <Link
-              to="experience"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-72}
-              className="cursor-pointer inline-flex items-center justify-center rounded-full border border-white/25 px-7 py-3.5 font-semibold text-cream hover:border-cream transition-colors"
+            <a
+              href={profile.cv}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-7 py-3.5 font-semibold text-cream hover:border-cream transition-colors"
             >
-              See My Track Record
-            </Link>
+              View My CV <FiFileText />
+            </a>
           </div>
         </motion.div>
 
