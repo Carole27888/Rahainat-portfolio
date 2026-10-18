@@ -46,7 +46,7 @@ const Navbar = () => {
             {...scrollProps}
             className="hidden sm:inline-flex cursor-pointer rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-ink hover:bg-cream transition-colors"
           >
-            Hire Me
+            Book a Call
           </Link>
           <button
             className="lg:hidden text-cream text-2xl p-1"

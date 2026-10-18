@@ -199,6 +199,35 @@ const profile = {
     },
   ],
 
+  // Vertical (9:16) videos hosted on Google Drive. Each file must be shared as "Anyone with the link".
+  // driveId is the part of the share link between /d/ and /view.
+  videos: [
+    {
+      title: 'What your roof\'s history reveals',
+      category: 'Short-Form Video',
+      description: 'Social video for Building Envelope Management showing property managers what a roof\'s condition says about its past.',
+      driveId: '1zs7UdULAtufJ38Jf1Ez9Y4mMCCGZI9MP',
+    },
+    {
+      title: 'Making roofing a predictable expense',
+      category: 'Short-Form Video',
+      description: 'Social video for Building Envelope Management on turning roof costs into one of the most predictable commercial real estate expenses.',
+      driveId: '1yBCUETiAtJ0HFVvQJY9wOCAAFARkh_rk',
+    },
+    {
+      title: 'Standing water on a flat roof',
+      category: 'Short-Form Video',
+      description: 'Social video for Building Envelope Management explaining why standing water on a commercial roof is a warning sign.',
+      driveId: '1SLKfF9277WZK3O1HEDVvnwXEP1Zo7dFe',
+    },
+    {
+      title: 'The roof you designed vs. the roof you got',
+      category: 'Short-Form Video',
+      description: 'Blueprint-style social video for Building Envelope Management on the gap between a roof\'s design and what gets installed.',
+      driveId: '1LNZUvctBy6KgXlZbuuYDei6bjE2jbA6N',
+    },
+  ],
+
   credentialsIntro: 'Formal education and professional certifications that back up her hands-on experience.',
   education: [{ title: 'Higher National Diploma (HND) in Biochemistry', issuer: '', year: '2024' }],
   certifications: [
