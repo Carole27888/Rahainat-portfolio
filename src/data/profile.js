@@ -1,7 +1,7 @@
 // All personal content for the portfolio lives here.
 // To reuse this template for someone else, edit this file and the images in public/images.
 
-import { FaPhoneVolume, FaTasks, FaRegCalendarCheck, FaUserTie } from 'react-icons/fa'
+import { FaTasks, FaRegCalendarCheck, FaUserTie } from 'react-icons/fa'
 import { FaMicrosoft } from 'react-icons/fa6'
 import { MdOutlineSms } from 'react-icons/md'
 import { BsDiagram3 } from 'react-icons/bs'
@@ -10,6 +10,7 @@ import { RiCustomerService2Line } from 'react-icons/ri'
 import { SlNotebook } from 'react-icons/sl'
 import {
   SiCanva,
+  SiClaude,
   SiClickup,
   SiClockify,
   SiGoogle,
@@ -18,7 +19,6 @@ import {
   SiHubspot,
   SiLinkedin,
   SiNotion,
-  SiOpenai,
   SiSlack,
   SiTrello,
   SiZoom,
@@ -38,9 +38,9 @@ const profile = {
 
   stats: [
     { value: 'Remote', label: 'Executives & teams supported' },
-    { value: '4', label: 'Remote roles since 2025' },
+    { value: '3+', label: 'Years of remote experience' },
     { value: '20+', label: 'Business tools' },
-    { value: '70+', label: 'Outbound calls per day' },
+    { value: '3', label: 'Professional certifications' },
   ],
 
   highlights: ['Executive & Administrative Support', 'Calendar, Meetings & Task Coordination', 'Remote Sales & Customer Support'],
@@ -63,7 +63,6 @@ const profile = {
     { skill: 'Workflow Automation (GoHighLevel)', icon: BsDiagram3 },
     { skill: 'Customer Support & Follow-up', icon: RiCustomerService2Line },
     { skill: 'Lead Generation & Prospecting', icon: TbTargetArrow },
-    { skill: 'Cold Calling & Appointment Setting', icon: FaPhoneVolume },
   ],
 
   tools: [
@@ -86,7 +85,7 @@ const profile = {
     { name: 'Canva', icon: SiCanva },
     { name: 'Hootsuite', icon: SiHootsuite },
     { name: 'HeyGen', icon: TbTool },
-    { name: 'ChatGPT', icon: SiOpenai },
+    { name: 'Claude', icon: SiClaude },
     { name: 'Gemini AI', icon: SiGooglegemini },
   ],
 
@@ -110,35 +109,24 @@ const profile = {
       job: 'Research Executive',
       company: 'Smart Grid Forums',
       location: 'United Kingdom (Remote)',
-      duration: 'May 2026 - Present',
+      duration: 'June 2025 - June 2026',
       responsibilities: [
-        'Schedule strategy calls with company executives and keep pipelines and activity up to date in HubSpot',
-        'Research companies and decision-makers with Apollo, Ensun, LinkedIn Sales Navigator, Hunter, and ContactOut',
-        'Secure sponsors and exhibitors for the SGT27 Geneva conference through outreach and follow-up',
-        'Make around 70 outbound calls per day and generate 300+ researched leads weekly',
+        'Scheduled strategy calls with company executives and kept pipelines and activity up to date in HubSpot',
+        'Researched companies and decision-makers with Apollo, Ensun, LinkedIn Sales Navigator, Hunter, and ContactOut',
+        'Secured sponsors and exhibitors for the SGT27 Geneva conference through outreach and follow-up',
+        'Generated 300+ researched leads weekly for the outreach team',
       ],
     },
     {
-      job: 'Cold Caller & Lead Generation Specialist',
+      job: 'Executive Assistant',
       company: 'Building Envelope Management',
       location: 'Miami, Florida, USA (Remote)',
-      duration: 'January 2026 - April 2026',
+      duration: 'February 2023 - April 2025',
       responsibilities: [
         'Booked meetings directly into the CEO\'s calendar with qualified property managers',
         'Built GoHighLevel workflows and triggers to automate follow-ups and lead nurturing',
         'Scheduled social content in Hootsuite, designed graphics in Canva, and created AI-avatar videos with HeyGen',
-        'Made an average of 50 outbound calls daily and ran cold email campaigns to about 30 leads per day',
-      ],
-    },
-    {
-      job: 'Cold Caller',
-      company: 'Mshel Real Estate',
-      location: 'Remote',
-      duration: 'January 2025 - November 2025',
-      responsibilities: [
-        'Maintained professional records of all client interactions',
-        'Handled inbound and outbound calls with new and existing clients, including warm follow-ups',
-        'Supported customer communication, lead engagement, and remote sales coordination',
+        'Ran email outreach campaigns to about 30 leads per day',
       ],
     },
   ],
@@ -221,7 +209,6 @@ const profile = {
       image: '/certificates/becoming-a-va-in-the-us.png',
     },
     { title: 'Virtual Assistant Certification', issuer: 'Udemy' },
-    { title: 'Cold Calling & Appointment Setting Certification', issuer: 'VSavvy Academy' },
     { title: 'English Proficiency Certificate', issuer: 'EF SET' },
   ],
 
