@@ -33,6 +33,7 @@ const profile = {
 
   // TODO: add Rahainat's photo to public/images and update this path
   photo: '/images/rahainat.jpeg',
+  cv: '/cv/Rahainat-Kazeem-CV.pdf',
 
   availability: 'Remote · Supporting US & UK teams',
 
