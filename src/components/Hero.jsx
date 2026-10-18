@@ -33,7 +33,7 @@ const Hero = () => {
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <Link
-              to="contact"
+              to="book"
               spy={true}
               smooth={true}
               duration={500}

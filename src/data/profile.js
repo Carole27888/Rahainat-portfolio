@@ -241,6 +241,13 @@ const profile = {
     { title: 'English Proficiency Certificate', issuer: 'EF SET' },
   ],
 
+  // Google Calendar booking page ("Discovery call with Rahainat"). Times are set in Eastern Time.
+  booking: {
+    url: 'https://calendar.app.google/v37KwaScWru7ox8v6',
+    embedUrl:
+      'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Hmj-bfhChSNvR7oZiLIJxQ0dbbidjDAWUKGukmjbQQ8ISQJjNQasf31LtaHJYvShLvTLR3ZNr?gv=true',
+  },
+
   contactIntro: 'Need someone to manage your calendar, keep tasks moving, and handle the details so you can focus on running the business?',
   // Empty values are hidden on the site.
   contact: {

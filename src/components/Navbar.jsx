@@ -42,7 +42,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-3">
           <Link
-            to="contact"
+            to="book"
             {...scrollProps}
             className="hidden sm:inline-flex cursor-pointer rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-ink hover:bg-cream transition-colors"
           >

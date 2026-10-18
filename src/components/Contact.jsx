@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser'
 import { FaFacebook, FaLinkedin, FaPhone, FaWhatsapp } from 'react-icons/fa'
 import { FaSquareInstagram } from 'react-icons/fa6'
 import { MdLocationPin, MdOutlineMail } from 'react-icons/md'
+import { FiArrowUpRight } from 'react-icons/fi'
 import profile from '../data/profile'
 import SectionLabel from './SectionLabel'
 
@@ -153,6 +154,33 @@ const Contact = () => {
               </p>
             )}
           </form>
+        </div>
+      </div>
+
+      <div id="book" className="mt-16 scroll-mt-24">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+          <div>
+            <h3 className="font-display text-3xl sm:text-4xl font-extrabold text-ink">Book a discovery call</h3>
+            <p className="mt-3 max-w-xl text-ink/70 leading-relaxed">
+              Pick a time that suits you. Times show in your own time zone, and a Google Meet link is sent once you book.
+            </p>
+          </div>
+          <a
+            href={profile.booking.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-sm font-semibold text-ink border-b-2 border-accent pb-1 hover:text-accentDark transition-colors self-start sm:self-auto"
+          >
+            Open booking page <FiArrowUpRight />
+          </a>
+        </div>
+        <div className="mt-8 overflow-hidden rounded-[28px] border border-ink/10 bg-white shadow-xl">
+          <iframe
+            src={profile.booking.embedUrl}
+            title="Book a discovery call with Rahainat"
+            loading="lazy"
+            className="block h-[700px] w-full border-0"
+          />
         </div>
       </div>
     </section>
